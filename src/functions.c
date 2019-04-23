@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "func.h"
+#include "functions.h"
 
 float PLUS (float *A, int n)
 {
@@ -33,7 +33,9 @@ float MULTIPLICATION (float *A, int n)
 float DIVISION (float a, float b, float *c)
 {
 	if (b == 0)
-		return -1;
+
+	return -1;
+
 	else
 	{
 		*c = a / b;
