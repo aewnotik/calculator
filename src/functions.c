@@ -62,5 +62,5 @@ int FACTORIAL(float a)
 
 float EXPONENT(float x, float y) 
 { 
-    return pow(x, y); 
+	return pow(x, y); 
 }
