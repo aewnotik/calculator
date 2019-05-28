@@ -1,7 +1,8 @@
+#include "functions.h"
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include "functions.h"
+
 
 float PLUS(float* A, int n)
 {
@@ -59,4 +60,7 @@ int FACTORIAL(float a)
         return n * fact(n - 1);
 }
 
-float EXPONENT(float x, float y) { return pow(x, y); }
+float EXPONENT(float x, float y) 
+{ 
+    return pow(x, y); 
+}
