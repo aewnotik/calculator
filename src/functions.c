@@ -60,7 +60,7 @@ int FACTORIAL(float a)
         return n * fact(n - 1);
 }
 
-float EXPONENT(float x, float y) 
-{ 
+float EXPONENT(float x, float y)
+{
     return pow(x, y);
 }

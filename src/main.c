@@ -49,17 +49,15 @@ int main()
                 printf("Invalid value");
             }
         } break;
-        case 5:
-            {
-                float a;
-                printf("Enter the number to extract the radical: ");
-                scanf("%f", &a);
-                if (RADICAL(a) != -1) {
-                    printf("Root = %d", RADICAL(a));
-                } else
-                    printf("Negative value");
-            }
-            break;
+        +        case 5: {
+            float a;
+            printf("Enter the number to extract the radical: ");
+            scanf("%f", &a);
+            if (RADICAL(a) != -1) {
+                printf("Root = %d", RADICAL(a));
+            } else
+                printf("Negative value");
+        } break;
         case 6: {
             printf("Enter the number for factorial: ");
             scanf("%d", &n);
@@ -74,4 +72,4 @@ int main()
         default:
             break;
         }
-}
+    }
