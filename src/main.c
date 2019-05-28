@@ -6,7 +6,7 @@ int main()
 	int i, n, item;
 	while (item != 9) {
 	printf("Calculator menu\n");
-	printf("1.Plus\n2.Minus\n3.Multiplication\n4.Division\n9. Quit");
+	printf("1.Plus\n2.Minus\n3.Multiplication\n4.Division\n5.Radical\n6.Factorial\n7.Exponent\n9. Quit");
 	printf("\nInput item: ");
 	scanf("%d", &item);
 	switch (item) {
@@ -59,7 +59,35 @@ int main()
 			}
 		}
 		break;
-}
-}
-return 0;
+`			case 5:
+		{
+			float a;
+			printf("Enter the number to extract the radical: ");
+			scanf("%f", &a);
+			if (RADICAL(a) != -1){
+				printf("Root = %d", RADICAL(a));
+			}
+			else
+				printf("Negative value");
+		}
+		break;
+			case 6:
+		{
+			printf("Enter the number for factorial: ");
+			scanf("%d", &n);
+			printf("Factorial = %d", FACTORIAL(n));
+		}
+		break;
+			case 8:
+		{
+			float x, y;
+			printf("Enter the number and extent: ");
+			scanf("%f %f", &x, &y);
+			printf("x^y = %.4f\n", EXPONENT(x,y));
+		}
+		default:
+			break;
+		}
+	}
+	return 0;
 }

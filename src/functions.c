@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "func.h"
+#include "functions.h"
 
 float PLUS (float *A, int n)
 {
@@ -39,4 +39,31 @@ float DIVISION (float a, float b, float *c)
 		*c = a / b;
 		return 0;
 	}
+}
+
+int RADICAL(float a)
+{
+	float value;
+	if (a < 0)
+	{
+		return -1.0;
+	}
+	else
+	{
+		value = sqrt(a);
+		return value;
+	}
+}
+
+int FACTORIAL(float a)
+{
+	if (n == 1)
+		return 1;
+	else
+		return n*fact(n-1);
+}
+
+float EXPONENT(float x, float y)
+{
+	return pow(x, y);
 }
