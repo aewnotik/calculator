@@ -42,14 +42,14 @@ int main()
             float a, b, c, f;
             printf("Enter dividend and divisor: ");
             scanf("%f %f", &a, &b);
-            f = DIVISON(a, b, &c);
+            f = DIVISION(a, b, &c);
             if (f == 0) {
                 printf("Value: %.4f\n", c);
             } else {
                 printf("Invalid value");
             }
         } break;
-            ` case 5:
+        case 5:
             {
                 float a;
                 printf("Enter the number to extract the radical: ");
@@ -74,3 +74,4 @@ int main()
         default:
             break;
         }
+}
