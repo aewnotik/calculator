@@ -4,9 +4,9 @@
 float PLUS(float* A, int n);
 float MINUS(float* A, int n);
 float MULTIPLICATION(float* A, int n);
-float DIVISION(float a, float b, float* c);
-int RADICAL(float a);
-int FACTORIAL(float a);
+float DIVISION(float a, float b);
+float RADICAL(float a);
+int FACTORIAL(int a);
 float EXPONENT(float x, float y);
 
 #endif

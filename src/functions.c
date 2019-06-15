@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 float PLUS(float* A, int n)
 {
     int i;
@@ -31,17 +30,18 @@ float MULTIPLICATION(float* A, int n)
     return value;
 }
 
-float DIVISION(float a, float b, float* c)
+float DIVISION(float a, float b)
 {
+    float c;
     if (b == 0)
-        return -1;
-    else {
-        *c = a / b;
         return 0;
+    else {
+        c = a / b;
+        return c;
     }
 }
 
-int RADICAL(float a)
+float RADICAL(float a)
 {
     float value;
     if (a < 0) {
@@ -52,12 +52,12 @@ int RADICAL(float a)
     }
 }
 
-int FACTORIAL(float a)
+int FACTORIAL(int a)
 {
-    if (n == 1)
+    if (a == 1)
         return 1;
     else
-        return n * fact(n - 1);
+        return a * FACTORIAL(a - 1);
 }
 
 float EXPONENT(float x, float y)
